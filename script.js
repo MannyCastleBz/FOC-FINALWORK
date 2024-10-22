@@ -8,10 +8,10 @@ let button1State = false; // false = off, true = on
     function toggleButton(buttonNumber) {
         if (buttonNumber === 1) {
             button1State = !button1State;
-            document.getElementById('button1').src = button1State ? 'onbutton.png' : 'offbutton.png';
+            document.getElementById('button1').src = button1State ? 'onbutton.PNG' : 'offbutton.PNG';
         } else if (buttonNumber === 2) {
             button2State = !button2State;
-            document.getElementById('button2').src = button2State ? 'onbutton.png' : 'offbutton.png';
+            document.getElementById('button2').src = button2State ? 'onbutton.PNG' : 'offbutton.PNG';
         }
         updateOutput();
     }
@@ -22,11 +22,11 @@ let button1State = false; // false = off, true = on
         if (button1State && button2State) {
             outputImage.src = 'and2on.png'; // Both buttons are ON
         } else if (!button1State && !button2State) {
-            outputImage.src = 'and2off.png'; // Both buttons are OFF
+            outputImage.src = 'and2off.PNG'; // Both buttons are OFF
         } else if (button1State && !button2State) {
-            outputImage.src = 'andonoff.png'; // Button 1 is ON, Button 2 is OFF
+            outputImage.src = 'andonoff.PNG'; // Button 1 is ON, Button 2 is OFF
         } else if (!button1State && button2State) {
-            outputImage.src = 'andoffon.png'; // Button 1 is OFF, Button 2 is ON
+            outputImage.src = 'andoffon.PNG'; // Button 1 is OFF, Button 2 is ON
         }
     }
 
